@@ -16,7 +16,7 @@ def is_line_of_arr(ln,arr):
 
 def get_headers(filename, lines):
     '''
-    Generates markdown headers in format:
+    Generates reStructuredText headers in format:
     line_index, header_level, header_text
     '''
     for n,i in enumerate(lines):
