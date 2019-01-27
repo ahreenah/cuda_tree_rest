@@ -1,6 +1,6 @@
 [info]
-title=TreeHelper for Markdown
-desc=TreeHelper for CudaTree, adds support for Markdown lexer
+title=TreeHelper for reStructuredText
+desc=TreeHelper for CudaTree, adds support for reStructuredText lexer
 type=cudatext-plugin
 subdir=cuda_tree_rest
 homepage=https://github.com/CudaText-addons/cuda_tree_markdown
