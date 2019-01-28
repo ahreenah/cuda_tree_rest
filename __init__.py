@@ -1,5 +1,3 @@
-import itertools
-
 def is_line_of(ln,sym):
     if ln=='':
         return False
@@ -33,6 +31,5 @@ def get_headers(filename, lines):
     for n,i in enumerate(lines):
         if is_line_of_arr(i,'-=\'"`:^~_*+#<>'):
             if n>0:
-                if (len(lines[n-1])<=len(i)) and (len(lines[n-1])):
+                if 0<len(lines[n-1])<=len(i):
                     yield (n-1,header_level(i[0]),lines[n-1])
-            print(i)
