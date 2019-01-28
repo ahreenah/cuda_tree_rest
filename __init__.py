@@ -1,4 +1,4 @@
-def is_line_of(ln,sym):
+def ilo(ln,sym):
     if ln=='':
         return False
     for i in ln:
@@ -6,20 +6,20 @@ def is_line_of(ln,sym):
             return False
     return True
 
-def is_line_of_arr(ln,arr):
+def ila(ln,arr):
     for i in arr:
-        if is_line_of(ln,i):
+        if ilo(ln,i):
             return True
     return False
     
-def header_level(hsym):
-    if hsym=='=':
+def lvl(s):
+    if s=='=':
         return 1
-    elif hsym=='-':
+    elif s=='-':
         return 2
-    elif hsym=='~':
+    elif s=='~':
         return 3
-    elif hsym=='"':
+    elif s=='"':
         return 4
     return 1
 
@@ -29,7 +29,7 @@ def get_headers(filename, lines):
     line_index, header_level, header_text
     '''
     for n,i in enumerate(lines):
-        if is_line_of_arr(i,'-=\'"`:^~_*+#<>'):
+        if ila(i,'-=\'"`:^~_*+#<>'):
             if n>0:
                 if 0<len(lines[n-1])<=len(i):
-                    yield (n-1,header_level(i[0]),lines[n-1])
+                    yield (n-1,lvl(i[0]),lines[n-1])
