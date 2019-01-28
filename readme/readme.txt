@@ -1,5 +1,5 @@
-TreeHelper for Markdown lexer.
+TreeHelper for reStructuredText lexer.
 Requires plugin CudaTree to work.
 
-author: Alexey (CudaText)
-license: MIT
+author: Medvosa (CudaText)
+(https://github.com/medvosa) license: MIT

@@ -1,10 +1,2 @@
-
-2018.05.19
-+ add: detects headers with ---- (level=2) and === (level=1) lines after header
-+ add: strips # from header ends
-
-2018.05.17
-* updated for last CudaTree
-
-2018.05.13
+2019.01.28
 initial
