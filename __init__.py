@@ -20,9 +20,9 @@ def header_level(hsym):
     elif hsym=='-':
         return 2
     elif hsym=='~':
-        return 2
-    elif hsym=='"':
         return 3
+    elif hsym=='"':
+        return 4
     return 1
 
 def get_headers(filename, lines):

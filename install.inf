@@ -3,7 +3,7 @@ title=TreeHelper for reStructuredText
 desc=TreeHelper for CudaTree, adds support for reStructuredText lexer
 type=cudatext-plugin
 subdir=cuda_tree_rest
-homepage=https://github.com/CudaText-addons/cuda_tree_markdown
+homepage=https://github.com/medvosa/cuda_tree_rest
 
 [treehelper1]
 lexers=reStructuredText
