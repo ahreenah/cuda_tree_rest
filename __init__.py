@@ -13,6 +13,17 @@ def is_line_of_arr(ln,arr):
         if is_line_of(ln,i):
             return True
     return False
+    
+def header_level(hsym):
+    if hsym=='=':
+        return 1
+    elif hsym=='-':
+        return 2
+    elif hsym=='~':
+        return 2
+    elif hsym=='"':
+        return 3
+    return 1
 
 def get_headers(filename, lines):
     '''
@@ -22,6 +33,6 @@ def get_headers(filename, lines):
     for n,i in enumerate(lines):
         if is_line_of_arr(i,'-=\'"`:^~_*+#<>'):
             if n>0:
-                if len(lines[n-1])==len(i):
-                    yield (n-1,True,lines[n-1])
+                if (len(lines[n-1])<=len(i)) and (len(lines[n-1])):
+                    yield (n-1,header_level(i[0]),lines[n-1])
             print(i)
